@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7DF3D7"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvBusinessName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:text="Your Business Name"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvBusinessDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBusinessName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/black"
+        android:text="This button will redirect you to the dialer."
+        app:layout_constraintEnd_toEndOf="@+id/tvBusinessName"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="@+id/tvBusinessName"
+        app:layout_constraintTop_toBottomOf="@+id/tvBusinessName" />
+
+    <Button
+        android:id="@+id/btnContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBusinessDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Click to call"
+        app:layout_constraintEnd_toEndOf="@+id/tvBusinessDescription"
+        app:layout_constraintStart_toStartOf="@+id/tvBusinessDescription"
+        app:layout_constraintTop_toBottomOf="@+id/tvBusinessDescription" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
